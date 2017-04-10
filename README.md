@@ -38,7 +38,8 @@ This trigger will be fired by the main activation poller action when a failed ac
 
 ### To create notification in Slack
 ```
-wsk action create posttoslack posttoslack.py -p slackwebhook <webhookURL> -p slack_username <username> -p slack_channel <ChannelName?
+wsk action create posttoslack posttoslack.py -p slackwebhook \
+<webhookURL> -p slack_username <username> -p slack_channel <ChannelName>
 wsk rule create postfailuretoslack notificationTrigger posttoslack
 ```
 For more information on how to set up an incomming webhook in slack here: [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks)
