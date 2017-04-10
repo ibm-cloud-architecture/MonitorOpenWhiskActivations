@@ -3,9 +3,10 @@
 ## Introduction
 
 This solution has been developed as a workaround for monitoring the health of OpenWhisk. This solution is in support of the IBM BlueCompute application. Today an IBM solution is not available for the Bluemix Service. The OpenWisk team is working on native LogMet integration, once released this solution will be superfluous.
+
 This solution is a simple OpenWhisk action that polls the OpenWhisk API, looks for failed activations and triggers a notification for failed activations. Should a failure be detected, an event is sent to the on premises IBM Netcool Operations Insight for processing and first responder notification. This solution can also send the event to Slack and LogMet.
 
-Activations in every Bluemix organisation and space that the user has access to in the current region will be scanned 
+Activations in every Bluemix organization and space that the user has access to in the current region will be scanned 
 
 ## Deploying the solution
 
