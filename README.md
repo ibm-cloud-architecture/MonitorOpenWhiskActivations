@@ -1,6 +1,6 @@
 # OpenWhisk Failed Activation Event Notification
 
-##Introduction
+## Introduction
 
 This solution has been developed as a workaround for monitoring the health of OpenWhisk. This solution is in support of the IBM BlueCompute application. Today an IBM solution is not available for the Bluemix Service.
 
@@ -13,9 +13,9 @@ Activations in every Bluemix organisation and space that the user has access to 
 The system has two steps
     
     1. getFailedActivations
-       - This action is triggered periodically and scans all activations since last run, looking for failed activations
-       - If a failed activation is found it triggers the notification trigger
-    2. Notification
+       - This action is triggered periodically and scans all activations since last run
+       - If a failed activation is found a failure message is generated  
+  2. Notification
        - One or more notification actions are invoked when the notification trigger is fired
 
 
